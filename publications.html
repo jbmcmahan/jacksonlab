@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<!-- Main -->
+
+<style>
+p    {padding-left: 2em;
+      text-indent: -2em;}
+</style>
+
+<section id="banner">
+    <div class="inner">
+        <h2>Publications</h2>
+    </div>
+</section>
+
+<section id="main" class="wrapper style1">
+    <div class="container">
+        <div class="row">
+            <div class="2u">
+                <section>
+                    <h3></h3>
+                </section>
+            </div>
+            <div class="8u">
+                <section>
+                    <h3>Most Recent</h3>
+                    {% for post in site.posts %}
+                        {% if post.categories contains 'publication' %}
+                            <p>
+                                {{ post.content }}
+                            </p>
+                        {% endif %}
+                    {% endfor %}
+                </section>
+                <hr />
+            </div>
+            <div class="2u">
+            </div>
+        </div>
+    </div>
+</section>

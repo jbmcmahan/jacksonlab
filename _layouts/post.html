@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="wrapper style1">
+    <article class="container">
+        <header class="major">
+            <h2 class="post-title">{{ page.title }}</h2>
+                <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+        </header>
+
+        <section class="post-content">
+            {{ content }}
+        </section>
+
+        <footer>
+              {% for post in site.categories.news %}
+                  {% if post.url == page.url %}
+                      {% assign post_index0 = forloop.index0 %}
+                      {% assign post_index1 = forloop.index %}
+                  {% endif %}
+              {% endfor %}
+              {% for post in site.categories.news %}
+                  {% if post_index0 == forloop.index %}
+                      {% assign next_post = post.url %}
+                  {% endif %}
+                  {% if post_index1 == forloop.index0 %}
+                      {% assign prev_post = post.url %}
+                  {% endif %}
+              {% endfor %}
+              {% if next_post %}
+                  <a href="{{ site.baseurl }}{{ next_post }}" class="float-right"> Next Post &rarr;</a> <br>
+              {% endif %}
+              {% if prev_post %}
+                  <a href="{{ site.baseurl }}{{ prev_post }}" class="float-left">&larr; Previous Post</a> <br>
+              {% endif %}
+        </footer>
+    </article>
+</div>

@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<!-- Main -->
+
+<section id="banner">
+    <div class="inner">
+        <h2>News Archive</h2>
+    </div>
+</section>
+
+<section id="main" class="wrapper style1">
+    <div class="container">
+        <div class="row">
+            <div class="3u">
+                <section>
+                    <h3></h3>
+                </section>
+            </div>
+            <div class="6u">
+                <section>
+                    <ul>
+                      {% for post in site.posts %}
+                        {% if post.categories contains 'news' %}
+                          <li>
+                            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                          </li>
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                </section>
+                <hr />
+            </div>
+            <div class="3u">
+            </div>
+        </div>
+    </div>
+</section>

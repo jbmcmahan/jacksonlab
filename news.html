@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<!-- Banner -->
+<section id="banner">
+    <div class="inner">
+        <h2>News</h2>
+    </div>
+</section>
+<section id="main" class="wrapper style1">
+    {% for post in site.posts limit:10 %}
+        {% if post.categories contains 'news' %}
+            <div class="wrapper {% cycle 'style1', 'style2' %}">
+                <header class="major">
+                    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                </header>
+                <section class="container">
+                    {{ post.excerpt }}
+                </section>
+                <section class="special">
+                    <ul class="actions">
+                        <li><a href="{{ site.baseurl }}{{ post.url }}" class="button {% cycle '', 'alt'%}">Read More</a></li>
+                    </ul>
+                </section>
+            </div>
+        {% endif %}
+    {% endfor %}
+</section>
+<header class="major">
+  <h2><a href="{{site.baseurl}}/archive.html">Archive</a></h2>
+</header>

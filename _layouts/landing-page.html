@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  {% include /head.html %}
+
+	<body id="top">
+
+        {% include /header.html %}
+
+        <!-- Banner -->
+        <section id="banner">
+            <div class="inner">
+                <h2>Orthopaedic Tissue Lab</h2>
+                <p>University of Miami Department of Biomedical Engineering</p>
+                <ul class="actions">
+                    <li><a href="{{ site.baseurl }}/research.html" class="button big alt">Research</a></li>
+                    <li><a href="{{ site.baseurl }}/contact.html" class="button big alt">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+        {{ content }}
+        {% include /footer.html %}
+
+    </body>
+
+</html>
