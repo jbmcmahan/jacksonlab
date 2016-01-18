@@ -44,11 +44,6 @@
 		margin: 0 0 2em 0;
 	}
 
-	p.hangingindent {
-		padding-left: 22px ;
-		text-indent: -22px ;
-	}
-
 	h1, h2, h3, h4, h5, h6 {
 		color: #666f77;
 		font-weight: 300;
@@ -1001,7 +996,7 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		color: #d8d8d8;
-		padding: 14em 0;
+		padding: 10em 0;
 		text-align: center;
 		position: relative;
 	}
