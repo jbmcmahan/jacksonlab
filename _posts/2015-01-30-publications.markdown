@@ -22,7 +22,7 @@ Yuan, T. -., <b>Jackson, A. R.</b>, Huang, C. -., & Gu, W. Y. (2009). Strain-dep
 
 <b>Jackson, A. R.</b>, Travascio, F., & Gu, W. Y. (2009). Effect of mechanical loading on electrical conductivity in human intervertebral disk. <i>Journal of Biomechanical Engineering</i>, 131(5), 054505 (5 )-054505 (5 ). doi:10.1115/1.3116152
 
-<b>Jackson, A. R., & Gu, W. Y.</b> (2009). Transport properties of cartilaginous tissues. <i>Current Rheumatology Reviews</i>, 5(1), 40-50. doi:10.2174/157339709787315320
+<b>Jackson, A. R.,</b> & Gu, W. Y. (2009). Transport properties of cartilaginous tissues. <i>Current Rheumatology Reviews</i>, 5(1), 40-50. doi:10.2174/157339709787315320
 
 <b>Jackson, A. R.</b>, Yuan, T., Huang, C. C., Travascio, F., & Yong Gu, W. (2008). Effect of compression and anisotropy on the diffusion of glucose in annulus fibrosus. <i>Spine</i>, 33(1), 1-7. doi:10.1097/BRS.0b013e31815e4136
 
