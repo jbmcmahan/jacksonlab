@@ -13,26 +13,22 @@ layout: default
             <div class="4u">
                 <section>
                     <h3>Recent News</h3>
-                    {% for post in site.posts %}
-                        {% if post.categories contains 'news'  %}
-                            {% if post.categories contains 'cells'  %}
-                                <p>
-                                    <a href="{{ post.url }}">{{ post.title }}</a> 
-                                </p>
-                            {% endif %}
+                    {% for post in site.categories.news %}
+                        {% if post.categories contains 'cells'  %}
+                            <p>
+                                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date }} {{ post.title }}</a>
+                            </p>
                         {% endif %}
                     {% endfor %}
                 </section>
                 <hr />
                 <section>
                     <h3>Publications</h3>
-                    {% for post in site.posts %}
-                        {% if post.categories contains 'publication'  %}
-                            {% if post.categories contains 'cells'  %}
-                                <p>
-                                    {{ post.content }}
-                                </p>
-                            {% endif %}
+                    {% for post in site.categories.publication %}
+                        {% if post.categories contains 'cells'  %}
+                            <p>
+                                {{ post.content }}
+                            </p>
                         {% endif %}
                     {% endfor %}
                 </section>
@@ -41,15 +37,15 @@ layout: default
                 <section>
                     <h2>Overview</h2>
                     <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-                    <p class"justify">The intervertebral disc (IVD) is the largest avascular structure in the body. Its primary 
-                    function is to transmit and cushion loads across the spine while giving the spine motion. Due 
-                    to the lack of vascularity, the IVD is generally found to be in a state of degeneration in adults. 
-                    Though many tissue properties of the discs have been studied, there are still gaps in the 
-                    cellular behavior of IVD cells and how their behavior leads to degeneration. In this lab, we 
-                    are studying the phenotypic expression of a host of different genes related to ECM regulation, 
+                    <p class="justify">The intervertebral disc (IVD) is the largest avascular structure in the body. Its primary
+                    function is to transmit and cushion loads across the spine while giving the spine motion. Due
+                    to the lack of vascularity, the IVD is generally found to be in a state of degeneration in adults.
+                    Though many tissue properties of the discs have been studied, there are still gaps in the
+                    cellular behavior of IVD cells and how their behavior leads to degeneration. In this lab, we
+                    are studying the phenotypic expression of a host of different genes related to ECM regulation,
                     as well as monitoring the metabolic activity of cells.</p>
-                    
-                    <p class="justify">Our long term goals of these studies are to (1) better characterize the phenotypic changes 
+
+                    <p class="justify">Our long term goals of these studies are to (1) better characterize the phenotypic changes
                     associated with disc degeneration; (2) observe how these changes affect the matrix composition
                     of the IVD; and (3) identify potential targets for treatment of degenerative disc disease.
                     </p></p>
