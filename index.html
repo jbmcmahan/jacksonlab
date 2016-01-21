@@ -42,45 +42,41 @@ layout: landing-page
 				<div class="container">
 					<div class="row">
 						<div class="6u">
-							{% for post in site.posts limit:1 %}
-								{% if post.categories contains "news" %}
-        								<div>
-            									<header class="major">
-                									<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-            									</header>
-            									<section class>
-            										<p>
-            											{{ post.excerpt }}
-            										</p>
-            									</section>
-            									<section class="special">
-                									<ul class="actions">
-                    										<li><a href="{{ site.baseurl }}{{ post.url }}" class="button alt">Read More</a></li>
-                									</ul>
-            									</section>
-        								</div>
-        							{% endif %}
+							{% for post in site.posts.news limit:1 %}
+        							<div>
+            								<header class="major">
+                								<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+            								</header>
+            								<section class>
+            									<p>
+            										{{ post.excerpt }}
+            									</p>
+            								</section>
+            								<section class="special">
+                								<ul class="actions">
+                    									<li><a href="{{ site.baseurl }}{{ post.url }}" class="button alt">Read More</a></li>
+                								</ul>
+            								</section>
+       								</div>
     							{% endfor %}
 						</div>
 						<div class="6u">
-							{% for post in site.posts offset:1 limit:1 %}
-        							{% if post.categories contains "news" %}
-        								<div>
-            									<header class="major">
-                									<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-            									</header>
-            									<section class>
-            										<p>
-            											{{ post.excerpt }}
-            										</p>
-            									</section>
-            									<section class="special">
-                									<ul class="actions">
-                    										<li><a href="{{ site.baseurl }}{{ post.url }}" class="button alt">Read More</a></li>
-                									</ul>
-            									</section>
-        								</div>
-        							{% endif %}
+							{% for post in site.posts.news offset:1 limit:1 %}
+        							<div>
+            								<header class="major">
+                								<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+            								</header>
+            								<section class>
+            									<p>
+            										{{ post.excerpt }}
+            									</p>
+            								</section>
+            								<section class="special">
+                								<ul class="actions">
+                    									<li><a href="{{ site.baseurl }}{{ post.url }}" class="button alt">Read More</a></li>
+                								</ul>
+            								</section>
+        							</div>
     							{% endfor %}
 						</div>
 					</div>
