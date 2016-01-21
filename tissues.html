@@ -16,7 +16,7 @@ layout: default
                     {% for post in site.categories.news %}
                         {% if post.categories contains 'tissues'  %}
                             <p>
-                                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date }} {{ post.title }}</a>
+                                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date_to_string }} {{ post.title }}</a>
                             </p>
                         {% endif %}
                     {% endfor %}
