@@ -13,19 +13,43 @@ layout: default
             <div class="4u">
                 <section>
                     <h3>Recent News</h3>
-                    <p>Update Later</p>
+                    {% for post in site.categories.news %}
+                        {% if post.categories contains 'tissues'  %}
+                            <p>
+                                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date }} {{ post.title }}</a>
+                            </p>
+                        {% endif %}
+                    {% endfor %}
                 </section>
                 <hr />
                 <section>
                     <h3>Publications</h3>
-                    <p>Update Later</p>
+                    {% for post in site.categories.publication %}
+                        {% if post.categories contains 'tissues'  %}
+                            <p>
+                                {{ post.content }}
+                            </p>
+                        {% endif %}
+                    {% endfor %}
                 </section>
             </div>
             <div class="8u skel-cell-important">
                 <section>
                     <h2>Overview</h2>
                     <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-                    <p>More details</p>
+                    <p class="justify"> Knee meniscus tissues are avascular tissues that assist in load bearing and shock absorption
+                    in the knee, amongst other functions. Due to its lack of vascularization, nutrients and fluids
+                    must find alternative means of reaching the inner areas of the meniscus. In this lab, we are
+                    studying different transport properties of knee meniscus tissues. </p>
+
+                    <p class="justify">Some of the properties being investigated include: the apparent glucose diffusivity, electrical
+                    conductivity, the glucose partition coefficient, and hydraulic permeability. </p>
+
+                    <p class="justify">Our long term goals are to (1) better understand the pathophysiology involved in the development
+                    of knee meniscus injury and degeneration; (2) explore the roles of solute and fluid transport in
+                    the nutritional supply and mechanical functioning of the meniscus in order to more fully understand
+                    the origins of meniscal degradation; and (3) identify effective treatment solutions for Osteoarthritis.
+                    </p>
                 </section>
             </div>
         </div>
