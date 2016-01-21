@@ -1,9 +1,7 @@
 ---
 layout: post
-categories: publication cells tissues
+categories: publication
 ---
-<b>Kleinhans KL</b>, <b>Jaworski LM</b>, Schneiderbauer MM, <b>Jackson AR</b>. Effect of Static Compressive Strain, Anisotropy, and Tissue Region on the Diffusion of Glucose in Meniscus Fibrocartilage. ASME. <i>J Biomech Eng</i>. 2015;137(10):101004-101004-8. doi:10.1115/1.4031118.
-
 Malandrino, A., <b>Jackson, A.</b>, Huyghe, J., & Noailly, J. (2015). Poroelastic modeling of the intervertebral disc: A path toward integrated studies of tissue biophysics and organ degeneration. <i>Mrs Bulletin</i>, 40(4), 324-332. doi:10.1557/mrs.2015.68
 
 Zhu, Q., <b>Jackson, A. R.</b>, & Gu, W. Y. (2012). Cell viability in intervertebral disc under various nutritional and dynamic loading conditions: 3d finite element analysis. <i>Journal of Biomechanics</i>, 45(16), 2769-2777. doi:10.1016/j.jbiomech.2012.08.044
