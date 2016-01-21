@@ -42,7 +42,7 @@ layout: landing-page
 				<div class="container">
 					<div class="row">
 						<div class="6u">
-							{% for post in site.posts.news limit:1 %}
+							{% for post in site.cetegories.news limit:1 %}
         							<div>
             								<header class="major">
                 								<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
@@ -61,7 +61,7 @@ layout: landing-page
     							{% endfor %}
 						</div>
 						<div class="6u">
-							{% for post in site.posts.news offset:1 limit:1 %}
+							{% for post in site.categories.news offset:1 limit:1 %}
         							<div>
             								<header class="major">
                 								<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
