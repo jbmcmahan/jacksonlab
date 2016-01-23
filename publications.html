@@ -4,11 +4,6 @@ layout: default
 
 <!-- Main -->
 
-<style>
-p    {padding-left: 2em;
-      text-indent: -2em;}
-</style>
-
 <section id="banner">
     <div class="inner">
         <h2>Publications</h2>
@@ -28,7 +23,7 @@ p    {padding-left: 2em;
                     <h3>Most Recent</h3>
                     {% for post in site.posts %}
                         {% if post.categories contains 'publication' %}
-                            <p>
+                            <p class="citation">
                                 {{ post.content }}
                             </p>
                         {% endif %}
