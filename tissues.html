@@ -13,20 +13,25 @@ layout: default
             <div class="4u">
                 <section>
                     <h3>Recent News</h3>
-                    {% for post in site.categories.news limit:6 %}
+                    {% for post in site.categories.news %}
+                    {% assign count = 0 %}
                         {% if post.categories contains 'tissues' %}
-                            <p>
-                                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date_to_string }} &#8208; {{ post.title }}</a>
-                            </p>
+                            {% if count < 5 %}
+                                <p>
+                                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date_to_string }} {{ post.title }}</a>
+                                </p>
+                                {% assign count = {{ {{count}} | plus:1 }} %}
+                                {{ count }}
+                            {% endif %}
                         {% endif %}
                     {% endfor %}
                 </section>
                 <hr />
                 <section>
                     <h3>Publications</h3>
-                    {% for post in site.categories.publication limit:6 %}
+                    {% for post in site.categories.publication %}
                         {% if post.categories contains 'tissues'  %}
-                            <p class="citation">
+                            <p>
                                 {{ post.content }}
                             </p>
                         {% endif %}
@@ -36,7 +41,7 @@ layout: default
             <div class="8u skel-cell-important">
                 <section>
                     <h2>Overview</h2>
-                    <a href="#" class="image fit"><img src="images/sem-tissue.jpg" alt="" /></a>
+                    <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
                     <p class="justify"> Knee meniscus tissues are avascular tissues that assist in load bearing and shock absorption
                     in the knee, amongst other functions. Due to its lack of vascularization, nutrients and fluids
                     must find alternative means of reaching the inner areas of the meniscus. In this lab, we are

@@ -13,30 +13,26 @@ layout: default
             <div class="4u">
                 <section>
                     <h3>Recent News</h3>
-                    {% for post in site.categories.news %}
-                        {% if post.categories contains 'cells' %}
-                            <p>
-                                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date_to_string }} &#8208; {{ post.title }}</a>
-                            </p>
-                        {% endif %}
+                    {% for post in site.categories.news.cells %}
+                        <p>
+                            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date_to_string }} &#8208; {{ post.title }}</a>
+                        </p>
                     {% endfor %}
                 </section>
                 <hr />
                 <section>
                     <h3>Publications</h3>
-                    {% for post in site.categories.publication %}
-                        {% if post.categories contains 'cells' %}
-                            <p class="citation">
-                                {{ post.content }}
-                            </p>
-                        {% endif %}
+                    {% for post in site.categories.publication.cells %}
+                        <p>
+                            {{ post.content }}
+                        </p>
                     {% endfor %}
                 </section>
             </div>
             <div class="8u skel-cell-important">
                 <section>
                     <h2>Overview</h2>
-                    <a href="#" class="image fit"><img src="images/live-dead.png" alt="" /></a>
+                    <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
                     <p class="justify">The intervertebral disc (IVD) is the largest avascular structure in the body. Its primary
                     function is to transmit and cushion loads across the spine while giving the spine motion. Due
                     to the lack of vascularity, the IVD is generally found to be in a state of degeneration in adults.
