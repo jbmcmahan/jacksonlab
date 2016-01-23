@@ -9,22 +9,20 @@ layout: default
     </div>
 </section>
 <section id="main" class="wrapper style1">
-    {% for post in site.posts limit:10 %}
-        {% if post.categories contains 'news' %}
-            <div class="wrapper {% cycle 'style1', 'style2' %}">
-                <header class="major">
-                    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-                </header>
-                <section class="container">
-                    {{ post.excerpt }}
-                </section>
-                <section class="special">
-                    <ul class="actions">
-                        <li><a href="{{ site.baseurl }}{{ post.url }}" class="button {% cycle '', 'alt'%}">Read More</a></li>
-                    </ul>
-                </section>
-            </div>
-        {% endif %}
+    {% for post in site.categories.news limit:10 %}
+        <div class="wrapper {% cycle 'style1', 'style2' %}">
+            <header class="major">
+                <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+            </header>
+            <section class="container">
+                {{ post.excerpt }}
+            </section>
+            <section class="special">
+                <ul class="actions">
+                    <li><a href="{{ site.baseurl }}{{ post.url }}" class="button {% cycle '', 'alt'%}">Read More</a></li>
+                </ul>
+            </section>
+        </div>
     {% endfor %}
 </section>
 <header class="major">
