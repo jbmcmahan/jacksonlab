@@ -15,7 +15,7 @@ layout: default
                     <h3>Recent News</h3>
                     {% for post in site.categories.news %}
                         {% assign count = 0 %}
-                        {% if post.categories contains 'tissues'  %}
+                        {% if post.categories contains 'tissues' %}
                             {% if count < 5 %}
                                 <p>
                                     <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date_to_string }} {{ post.title }}</a>
@@ -54,6 +54,8 @@ layout: default
                     the nutritional supply and mechanical functioning of the meniscus in order to more fully understand
                     the origins of meniscal degradation; and (3) identify effective treatment solutions for Osteoarthritis.
                     </p>
+
+                    {% assign count = 0 %}
                 </section>
             </div>
         </div>
