@@ -20,7 +20,7 @@ layout: default
                                 <p>
                                     <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date_to_string }} {{ post.title }}</a>
                                 </p>
-                                {% assign count = count | plus: 1 %}
+                                {% increment count %}
                                 {{ count }}
                             {% endif %}
                         {% endif %}
