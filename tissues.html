@@ -14,7 +14,7 @@ layout: default
                 <section>
                     <h3>Recent News</h3>
                     {% for post in site.categories.news %}
-                        {% assign count: 0 %}
+                        {% assign count = 0 %}
                         {% if post.categories contains 'tissues'  %}
                             {% if count < 5 %}
                                 <p>
