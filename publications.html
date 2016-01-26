@@ -26,9 +26,10 @@ p    {padding-left: 2em;
             <div class="8u">
                 <section>
                     <h3>Most Recent</h3>
-                    {% for pub in site.publications | where: "categories", "tissues" %}
+                    {% assign items = site.publications | sort: 'date' %}
+                    {% for item in items %}
                         <p>
-                            {{ pub.content }}
+                            {{ item.content }}
                         </p>
                     {% endfor %}
                 </section>
