@@ -26,7 +26,7 @@ p    {padding-left: 2em;
             <div class="8u">
                 <section>
                     <h3>Most Recent</h3>
-                    {% assign items = site.posts | where: "group", "publications" %}
+                    {% assign items = site.posts | where: "area", "publications" %}
                     {% for item in items %}
                         <p>
                             {{ item.content }}
