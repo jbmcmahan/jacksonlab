@@ -13,28 +13,23 @@ layout: default
             <div class="4u">
                 <section>
                     <h3>Recent News</h3>
-                    {% for post in site.categories.news %}
-                    {% assign count = 0 %}
-                        {% if post.categories contains 'tissues' %}
-                            {% if count < 5 %}
-                                <p>
-                                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date_to_string }} {{ post.title }}</a>
-                                </p>
-                                {% assign count = {{ {{count}} | plus:1 }} %}
-                                {{ count }}
-                            {% endif %}
-                        {% endif %}
+                    {% assign items2 = site.posts | where: "group", "news" %}
+                    {% assign items = site.posts | where: "area", "tissues" %}
+                    {% for item in items limit:5 %}
+                      <p>
+                          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date_to_string }} {{ post.title }}</a>
+                      </p>
                     {% endfor %}
                 </section>
                 <hr />
                 <section>
                     <h3>Publications</h3>
-                    {% for post in site.categories.publication %}
-                        {% if post.categories contains 'tissues'  %}
-                            <p>
-                                {{ post.content }}
-                            </p>
-                        {% endif %}
+                    {% assign items2 = site.posts | where: "group", "publication" %}
+                    {% assign items = site.posts | where: "area", "tissues" %}
+                    {% for item in items limit:5 %}
+                        <p>
+                            {{ post.content }}
+                        </p>
                     {% endfor %}
                 </section>
             </div>
@@ -55,8 +50,6 @@ layout: default
                     the nutritional supply and mechanical functioning of the meniscus in order to more fully understand
                     the origins of meniscal degradation; and (3) identify effective treatment solutions for Osteoarthritis.
                     </p>
-
-                    {% assign count = 0 %}
                 </section>
             </div>
         </div>
