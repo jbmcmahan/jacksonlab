@@ -3,6 +3,12 @@ layout: default
 ---
 
 <!-- Main -->
+
+<style>
+p.pubs    {padding-left: 2em;
+      text-indent: -2em;}
+</style>
+
 <section id="main" class="wrapper style1">
     <header class="major">
         <h2>Orthopaedic Cellular Research</h2>
@@ -26,7 +32,7 @@ layout: default
                     {% assign items2 = site.posts | where: "group", "publication" %}
                     {% assign items = items2 | where: "area", "cells" %}
                     {% for item in items limit:5 %}
-                        <p>
+                        <p class="pubs">
                             {{ item.content }}
                         </p>
                     {% endfor %}
