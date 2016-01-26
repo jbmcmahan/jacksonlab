@@ -9,7 +9,7 @@ layout: default
     </div>
 </section>
 <section id="main" class="wrapper style1">
-    {% assign items = site.posts | where: "area", "tissues" %}
+    {% assign items = site.posts | where: "categories", "news" %}
     {% for item in items limit:5 %}
         <div class="wrapper {% cycle 'style1', 'style2' %}">
             <header class="major">
