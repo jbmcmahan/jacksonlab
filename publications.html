@@ -3,6 +3,12 @@ layout: default
 ---
 
 <!-- Main -->
+
+<style>
+p    {padding-left: 2em;
+      text-indent: -2em;}
+</style>
+
 <section id="banner">
     <div class="inner">
         <h2>Publications</h2>
@@ -22,7 +28,7 @@ layout: default
                     <h3>Most Recent</h3>
                     {% assign items = site.posts | where: "group", "publication" %}
                     {% for item in items %}
-                        <p class="pubs">
+                        <p>
                             {{ item.content }}
                         </p>
                     {% endfor %}
