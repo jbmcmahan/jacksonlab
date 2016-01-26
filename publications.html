@@ -26,7 +26,7 @@ p    {padding-left: 2em;
             <div class="8u">
                 <section>
                     <h3>Most Recent</h3>
-                    {% for pub in site.publications %}
+                    {% for pub in site.publications | where: "categories", "tissues" %}
                         <p>
                             {{ pub.content }}
                         </p>

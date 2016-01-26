@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: cells publication
+categories: cells
 ---
 Malandrino, A., <b>Jackson, A.</b>, Huyghe, J., & Noailly, J. (2015). Poroelastic modeling of the intervertebral disc: A path toward integrated studies of tissue biophysics and organ degeneration. <i>Mrs Bulletin</i>, 40(4), 324-332. doi:10.1557/mrs.2015.68
 
