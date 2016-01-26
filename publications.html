@@ -26,12 +26,10 @@ p    {padding-left: 2em;
             <div class="8u">
                 <section>
                     <h3>Most Recent</h3>
-                    {% for post in site.posts %}
-                        {% if post.categories contains 'publication' %}
-                            <p>
-                                {{ post.content }}
-                            </p>
-                        {% endif %}
+                    {% for pub in site.publications %}
+                        <p>
+                            {{ post.content }}
+                        </p>
                     {% endfor %}
                 </section>
             </div>
