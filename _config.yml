@@ -12,3 +12,8 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+  publications:
+    output: true

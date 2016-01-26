@@ -21,11 +21,12 @@ layout: default
             <div class="6u">
                 <section>
                     <ul>
-                      {% assign items = site.posts | where: "categories", "news" %}
-                      {% for item in items %}
-                        <li>
-                          <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
-                        </li>
+                      {% for post in site.posts %}
+                        {% if post.categories contains 'news' %}
+                          <li>
+                            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                          </li>
+                        {% endif %}
                       {% endfor %}
                     </ul>
                 </section>
