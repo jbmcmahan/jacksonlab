@@ -9,38 +9,23 @@ layout: default
     </div>
 </section>
 <section id="main" class="wrapper style1">
-  <div class="container">
-      <div class="row">
-          <div class="2u">
-              <section>
-                  <h3></h3>
-              </section>
-          </div>
-          <div class="8u">
-              <section>
-                {% assign items = site.posts | where: "group", "news" %}
-                {% for item in items limit:5 %}
-                    <div class="wrapper {% cycle 'style1', 'style2' %}">
-                        <header class="major">
-                            <h2><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></h2>
-                        </header>
-                        <section class="container">
-                            {{ item.excerpt }}
-                        </section>
-                        <section class="special">
-                            <ul class="actions">
-                                <li><a href="{{ site.baseurl }}{{ item.url }}" class="button {% cycle '', 'alt'%}">Read More</a></li>
-                            </ul>
-                        </section>
-                    </div>
-                {% endfor %}
+    {% assign items = site.posts | where: "group", "news" %}
+    {% for item in items limit:5 %}
+        <div class="wrapper {% cycle 'style1', 'style2' %}">
             <header class="major">
-              <h2><a href="{{site.baseurl}}/archive.html">Archive</a></h2>
+                <h2><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></h2>
             </header>
+            <section class="container">
+                {{ item.excerpt }}
             </section>
-          </div>
-          <div class="2u">
-          </div>
-      </div>
-  </div>
+            <section class="special">
+                <ul class="actions">
+                    <li><a href="{{ site.baseurl }}{{ item.url }}" class="button {% cycle '', 'alt'%}">Read More</a></li>
+                </ul>
+            </section>
+        </div>
+    {% endfor %}
 </section>
+<header class="major">
+  <h2><a href="{{site.baseurl}}/archive.html">Archive</a></h2>
+</header>
