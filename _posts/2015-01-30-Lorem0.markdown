@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: news
+group: news
 area: tissues
 ---
 <img src="{{ site.baseurl }}/images/pic02.jpg" class="fit image">
