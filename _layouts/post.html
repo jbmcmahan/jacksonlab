@@ -14,7 +14,7 @@ layout: default
 
         <footer>
               {% assign items = site.posts | where: "group", "news" %}
-              {% for post in items %}
+              {% for item in items %}
                   {% if item.url == page.url %}
                       {% assign post_index0 = forloop.index0 %}
                       {% assign post_index1 = forloop.index %}
