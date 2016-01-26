@@ -9,7 +9,8 @@ layout: default
     </div>
 </section>
 <section id="main" class="wrapper style1">
-    {% for post in site.categories.news limit:10 %}
+    {% assign items = site.posts | where: "categories", "news"}
+    {% for post in items limit:5 %}
         <div class="wrapper {% cycle 'style1', 'style2' %}">
             <header class="major">
                 <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
