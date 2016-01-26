@@ -13,18 +13,19 @@ layout: default
         </section>
 
         <footer>
-              {% for post in site.categories.news %}
-                  {% if post.url == page.url %}
+              {% assign items = site.posts | where: "group", "news" %}
+              {% for post in items %}
+                  {% if item.url == page.url %}
                       {% assign post_index0 = forloop.index0 %}
                       {% assign post_index1 = forloop.index %}
                   {% endif %}
               {% endfor %}
-              {% for post in site.categories.news %}
+              {% for item in items %}
                   {% if post_index0 == forloop.index %}
-                      {% assign next_post = post.url %}
+                      {% assign next_post = item.url %}
                   {% endif %}
                   {% if post_index1 == forloop.index0 %}
-                      {% assign prev_post = post.url %}
+                      {% assign prev_post = item.url %}
                   {% endif %}
               {% endfor %}
               {% if next_post %}
