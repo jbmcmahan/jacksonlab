@@ -13,18 +13,21 @@ layout: default
             <div class="4u">
                 <section>
                     <h3>Recent News</h3>
-                    {% for post in site.categories.news.cells %}
-                        <p>
-                            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date_to_string }} &#8208; {{ post.title }}</a>
-                        </p>
+                    {% assign items2 = site.posts | where: "group", "news" %}
+                    {% assign items = items2 | where: "area", "cells" %}
+                    {% for item in items limit:5 %}
+                      <p>
+                          <a href="{{ site.baseurl }}{{ item.url }}">{{ item.date | date_to_string }} {{ item.title }}</a>
+                      </p>
                     {% endfor %}
                 </section>
-                <hr />
                 <section>
                     <h3>Publications</h3>
-                    {% for post in site.categories.publication.cells %}
+                    {% assign items2 = site.posts | where: "group", "publication" %}
+                    {% assign items = items2 | where: "area", "cells" %}
+                    {% for item in items limit:5 %}
                         <p>
-                            {{ post.content }}
+                            {{ item.content }}
                         </p>
                     {% endfor %}
                 </section>
