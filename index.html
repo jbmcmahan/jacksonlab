@@ -42,38 +42,40 @@ layout: landing-page
 				<div class="container">
 					<div class="row">
 						<div class="6u">
-							{% for post in site.categories.news limit:1 %}
+							{% assign items = site.posts | where: "group", "news" %}
+							{% for item in items limit:1 %}
         							<div>
             								<header class="major">
-                								<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                								<h3><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></h2>
             								</header>
             								<section class>
             									<p>
-            										{{ post.excerpt }}
+            										{{ item.excerpt }}
             									</p>
             								</section>
             								<section class="special">
                 								<ul class="actions">
-                    									<li><a href="{{ site.baseurl }}{{ post.url }}" class="button alt">Read More</a></li>
+                    									<li><a href="{{ site.baseurl }}{{ item.url }}" class="button alt">Read More</a></li>
                 								</ul>
             								</section>
        								</div>
     							{% endfor %}
 						</div>
 						<div class="6u">
-							{% for post in site.categories.news offset:1 limit:1 %}
+							{% assign items = site.posts | where: "group", "news" %}
+							{% for item in items offset:1 limit:1 %}
         							<div>
             								<header class="major">
-                								<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                								<h3><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></h2>
             								</header>
             								<section class>
             									<p>
-            										{{ post.excerpt }}
+            										{{ item.excerpt }}
             									</p>
             								</section>
             								<section class="special">
                 								<ul class="actions">
-                    									<li><a href="{{ site.baseurl }}{{ post.url }}" class="button alt">Read More</a></li>
+                    									<li><a href="{{ site.baseurl }}{{ item.url }}" class="button alt">Read More</a></li>
                 								</ul>
             								</section>
         							</div>
