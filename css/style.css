@@ -86,7 +86,7 @@
 
 	h6 {
 		font-size: 0.7em;
-		line-height: 1em;
+		line-height: 1.5em;
 		font-style: italic;
 	}
 
@@ -439,7 +439,7 @@
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			<!--font-family: FontAwesome;-->
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
