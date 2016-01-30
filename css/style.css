@@ -24,12 +24,13 @@
 	}
 
 	a {
-		color: #629DD1;
+		
 		text-decoration: underline;
 	}
 
 		a:hover {
 			text-decoration: none;
+			color: #629DD1;
 		}
 
 	strong, b, .cc-active {
