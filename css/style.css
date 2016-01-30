@@ -172,6 +172,25 @@
         float: right;
     }
 
+		.img_wrapper{
+
+		    overflow: hidden;
+		}
+
+		.img_wrapper img{
+
+		    opacity: 0;
+
+				-webkit-transition: opacity 150ms;
+    		-moz-transition: opacity 150ms;
+    		-ms-transition: opacity 150ms;
+    		transition: opacity 150ms;
+		}
+
+			.img_wrapper.loaded img{
+    			opacity: 1;
+			}
+
 /* Section/Article */
 
 	section.special, article.special {
