@@ -1022,6 +1022,15 @@
 				right: 0;
 			}
 
+/* Preload */
+
+	#preload * {
+	    -webkit-transition: none !important;
+	    -moz-transition: none !important;
+	    -ms-transition: none !important;
+	    -o-transition: none !important;
+			}
+
 /* Banner */
 
 	#banner {
