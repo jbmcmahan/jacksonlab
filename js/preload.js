@@ -1,1 +1,3 @@
-document.getElementById("preload").className = "";
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
