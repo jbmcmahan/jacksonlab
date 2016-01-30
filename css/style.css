@@ -952,6 +952,7 @@
 
 			#header h1 a {
 				font-size: 1.25em;
+				color: #666f77;
 			}
 
 				#header h1 a img {
@@ -1020,15 +1021,6 @@
 
 			#header .container nav {
 				right: 0;
-			}
-
-/* Preload */
-
-	#preload * {
-	    -webkit-transition: none !important;
-	    -moz-transition: none !important;
-	    -ms-transition: none !important;
-	    -o-transition: none !important;
 			}
 
 /* Banner */
