@@ -181,10 +181,10 @@
 
 		    opacity: 0;
 
-				-webkit-transition: opacity 150ms;
-    		-moz-transition: opacity 150ms;
-    		-ms-transition: opacity 150ms;
-    		transition: opacity 150ms;
+				-webkit-transition: opacity 250ms;
+    		-moz-transition: opacity 250ms;
+    		-ms-transition: opacity 250ms;
+    		transition: opacity 250ms;
 		}
 
 			.img_wrapper.loaded img{
