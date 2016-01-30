@@ -9,7 +9,9 @@ layout: default
     </header>
     <div class="container">
         <section>
-            <img src="{{ site.baseurl }}/images/lab.jpg" class="image fit"/>
+          <div class="img_wrapper">
+            <img src="{{ site.baseurl }}/images/lab.jpg" class="image fit" alt="" onload="imgLoaded(this)"/>
+          </div>
             <p class="justify">Our laboratory is dedicated to the investigation of transport properties and nutritional supply to
             cells and tissues along with the biomechanics of soft tissues. At the cellular level, we work to understand
             the behavior of cells and how changes in physiological conditions affect the degenerative state of tissues
@@ -20,7 +22,9 @@ layout: default
         <div class="row">
             <div class="6u">
                 <section class="special">
-                    <a href="{{ site.baseurl }}/cells.html" class="image fit"><img src="{{ site.baseurl }}/images/live-dead.png" alt="" /></a>
+                  <div class="img_wrapper">
+                    <a href="{{ site.baseurl }}/cells.html" class="image fit"><img src="{{ site.baseurl }}/images/live-dead.png" alt="" onload="imgLoaded(this)"/></a>
+                  </div>
                     <h3>Cellular Level</h3>
                     <p class="justify">The intervertebral disc (IVD) is the largest avascular structure in the body. Its primary
                     function is to transmit and cushion loads across the spine while giving the spine motion. Due
@@ -41,7 +45,9 @@ layout: default
             </div>
             <div class="6u">
                 <section class="special">
-                    <a href="{{ site.baseurl }}/tissues.html" class="image fit"><img src="{{ site.baseurl }}/images/sem-tissue.jpg" alt="" /></a>
+                  <div class="img_wrapper">
+                    <a href="{{ site.baseurl }}/tissues.html" class="image fit"><img src="{{ site.baseurl }}/images/sem-tissue.jpg" alt="" onload="imgLoaded(this)"/></a>
+                  </div>
                     <h3>Tissue Level</h3>
                     <p class="justify"> Knee meniscus tissues are avascular tissues that assist in load bearing and shock absorption
                     in the knee, amongst other functions. Due to its lack of vascularization, nutrients and fluids

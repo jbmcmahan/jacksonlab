@@ -9,7 +9,9 @@ layout: default
     </header>
     <div class="container">
         <section>
-            <img src="{{ site.baseurl }}/images/campus_U.jpg" class="image fit" />
+          <div class="img_wrapper">
+            <img src="{{ site.baseurl }}/images/campus_U.jpg" class="image fit" onload="imgLoaded(this)"/>
+          </div>
             <p>We always look forward to working with exceptional graduate and
               undergraduate students interested in orthopaedic research. </p>
         </section>
