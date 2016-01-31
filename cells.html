@@ -37,6 +37,7 @@ p.pubs    {padding-left: 2em;
                     {% assign items2 = site.posts | where: "group", "publication" %}
                     {% assign items = items2 | where: "area", "cells" %}
                     {% for item in items limit:5 %}
+                        {% if item %}
                         <p class="pubs">
                             {{ item.content }}
                         </p>
