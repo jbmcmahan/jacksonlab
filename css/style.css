@@ -181,19 +181,21 @@
         float: right;
     }
 
-		.img_wrapper {
-
-		    opacity: 0;
-
-				-webkit-transition: opacity 500ms;
-    		-moz-transition: opacity 500ms;
-    		-ms-transition: opacity 500ms;
-    		transition: opacity 500ms;
+		.img_wrapper{
+		    padding-top: 30%;
+		    overflow: hidden;
 		}
 
-			.loaded {
-    			opacity: 1;
-			}
+		.img_wrapper img{
+		    position: absolute;
+		    top: 0;
+		    width: 100%;
+		    opacity: 0;
+		}
+
+		.img_wrapper.loaded img{
+    opacity: 1;
+		}
 
 /* Section/Article */
 
