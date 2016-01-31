@@ -182,7 +182,7 @@
     }
 
 		.img_wrapper{
-
+			  padding-top: inherit;
 		    overflow: hidden;
 		}
 
@@ -190,10 +190,10 @@
 
 		    opacity: 0;
 
-				-webkit-transition: opacity 250ms;
-    		-moz-transition: opacity 250ms;
-    		-ms-transition: opacity 250ms;
-    		transition: opacity 250ms;
+				-webkit-transition: opacity 500ms;
+    		-moz-transition: opacity 500ms;
+    		-ms-transition: opacity 500ms;
+    		transition: opacity 500ms;
 		}
 
 			.img_wrapper.loaded img{
