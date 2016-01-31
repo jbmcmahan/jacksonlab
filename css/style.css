@@ -24,12 +24,12 @@
 	}
 
 	a {
-		color: #555f66;
-		text-decoration: none;
+		color: #629DD1;
+		text-decoration: underline;
 	}
 
 		a:hover {
-			color: #666f77;
+			text-decoration: none;
 		}
 
 	strong, b, .cc-active {
@@ -55,7 +55,7 @@
 		color: #629DD1;
 		}
 
-	p.justify {
+	.justify {
 		text-align: justify;
     text-justify: inter-word;
 	}
