@@ -183,14 +183,17 @@
 
 		.img_wrapper{
 		    overflow: hidden;
+				padding-bottom:35%;
 		}
 
 		.img_wrapper img{
 			opacity: 0;
+			padding-bottom:35%;
 		}
 
 		.img_wrapper.loaded img{
     opacity: 1;
+		padding-bottom:0%;
 		}
 
 /* Section/Article */
