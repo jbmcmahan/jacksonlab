@@ -196,7 +196,7 @@
     		transition: opacity 500ms;
 		}
 
-			.img_wrapper.loaded {
+			.loaded {
     			opacity: 1;
 			}
 

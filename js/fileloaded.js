@@ -1,5 +1,5 @@
-function imgLoaded(img){
-    var $img = $(img);
+function imgLoaded(x){
+    var $x = $(x);
 
-    $img.parent().addClass('loaded');
+    $x.parent().addClass('loaded');
 };
