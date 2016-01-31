@@ -181,11 +181,6 @@
         float: right;
     }
 
-		.img_wrapper{
-			  padding-top: inherit;
-		    overflow: hidden;
-		}
-
 		.img_wrapper {
 
 		    opacity: 0;
