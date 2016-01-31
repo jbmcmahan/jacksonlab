@@ -182,7 +182,9 @@
     }
 
 		.img_wrapper{
-		    overflow: hidden;
+			position: relative;
+    	padding-top: 35%;
+		  overflow: hidden;
 		}
 
 		.img_wrapper img{
@@ -195,6 +197,9 @@
 		}
 
 		.img_wrapper.loaded img{
+			position: absolute;
+    top: 0;
+    width: 100%;
     opacity: 1;
 		}
 
