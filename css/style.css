@@ -25,11 +25,11 @@
 
 	a {
 		color: #555f66;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 		a:hover {
-			text-decoration: none;
+			text-decoration: underline;
 		}
 
 	strong, b, .cc-active {
