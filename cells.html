@@ -21,9 +21,15 @@ p.pubs    {padding-left: 2em;
                     {% assign items2 = site.posts | where: "group", "news" %}
                     {% assign items = items2 | where: "area", "cells" %}
                     {% for item in items limit:5 %}
+                      {% if item %}
                       <p>
                           <a href="{{ site.baseurl }}{{ item.url }}">{{ item.date | date_to_string }} &mdash; {{ item.title }}</a>
                       </p>
+                      {% else %}
+                      <p>
+                        There is no recent news.
+                      </p>
+                      {% endif %}
                     {% endfor %}
                 </section>
                 <section>
@@ -34,6 +40,11 @@ p.pubs    {padding-left: 2em;
                         <p class="pubs">
                             {{ item.content }}
                         </p>
+                        {% else %}
+                        <p>
+                          Articles are currently in revision.
+                        </p>
+                        {% endif %}
                     {% endfor %}
                 </section>
             </div>
