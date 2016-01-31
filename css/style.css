@@ -29,7 +29,7 @@
 	}
 
 		a:hover {
-			text-decoration: underline;
+			color: #666f77;
 		}
 
 	strong, b, .cc-active {
@@ -204,6 +204,11 @@
 
 	section.special, article.special {
 		text-align: center;
+	}
+
+	header a {
+		color: #555f66;
+		text-decoration: none;
 	}
 
 	header p {
