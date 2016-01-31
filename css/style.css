@@ -186,7 +186,7 @@
 		    overflow: hidden;
 		}
 
-		.img_wrapper img{
+		.img_wrapper {
 
 		    opacity: 0;
 
@@ -196,7 +196,7 @@
     		transition: opacity 500ms;
 		}
 
-			.img_wrapper.loaded img{
+			.img_wrapper.loaded {
     			opacity: 1;
 			}
 
