@@ -57,7 +57,7 @@
 
 	.justify {
 		text-align: justify;
-    text-justify: inter-word;
+    		text-justify: inter-word;
 	}
 
 	h1, h2, h3, h4, h5 {
@@ -173,34 +173,34 @@
 		text-align: right;
 	}
 
-    .float-left {
-        float: left;
-    }
+    	.float-left {
+        	float: left;
+    	}
 
-    .float-right {
-        float: right;
-    }
+    	.float-right {
+        	float: right;
+    	}
 
-		.img_wrapper{
-			position: relative;
-    	padding-top: 35%;
-		  overflow: hidden;
-		}
+	.img_wrapper{
+		position: relative;
+    		padding-top: 35%;
+		overflow: hidden;
+	}
 
-		.img_wrapper img{
-			opacity: 0;
-
-			-webkit-transition: opacity 500ms;
-    	-moz-transition: opacity 500ms;
-    	-ms-transition: opacity 500ms;
-    	transition: opacity 500ms;
+	.img_wrapper img{
+		opacity: 0;
+		-webkit-transition: opacity 500ms;
+    		-moz-transition: opacity 500ms;
+    		-ms-transition: opacity 500ms;
+    		transition: opacity 500ms;
 		}
 
 		.img_wrapper.loaded img{
 			position: absolute;
-    top: 0;
-    width: 100%;
-    opacity: 1;
+    			top: 0;
+    			padding-top: 0%;
+    			width: 100%;
+    			opacity: 1;
 		}
 
 /* Section/Article */
