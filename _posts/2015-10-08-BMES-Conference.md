@@ -9,3 +9,6 @@ area: tissues
 Kelsey Kleinhans, Jeff McMahan, and Dr. Jackson present poster entitled "Effect
 of Anisotropy and Tissue Region on Electrical Conductivity in Porcine Meniscus"
 at the Biomedical Engineering Society Conference in Tampa, Florida.
+
+The conference included universities from around the world, and many groups from
+the University of Miami Biomedical Engineering Department presented their posters.
