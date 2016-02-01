@@ -3,8 +3,7 @@ layout: post
 title:  "Annual Meeting of the Orthopaedic Research Society 2015"
 date:   2015-03-15 14:37:44
 group: news
-area: tissues 
-area: cells
+area: tissues cells
 ---
 Lukas Jaworski and Kelsey Kleinhans present their posters at the Annual Meeting of the Orthopaedic Research Society.
 
