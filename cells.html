@@ -3,43 +3,15 @@ layout: default
 ---
 
 <!-- Main -->
-
 <section id="main" class="wrapper style1">
     <header class="major">
         <h2>Orthopaedic Cellular Research</h2>
     </header>
     <div class="container">
         <div class="row">
-            <div class="5u">
+            <div class="8u">
                 <section>
-                    <h3>Recent News</h3>
-                    {% assign items2 = site.posts | where: "group", "news" %}
-                    {% assign items = items2 | where: "area", "cells" %}
-                    {% for item in items limit:5 %}
-                      <p>
-                          <a href="{{ site.baseurl }}{{ item.url }}">{{ item.date | date_to_string }} &mdash; {{ item.title }}</a>
-                      </p>
-                    {% endfor %}
-                </section>
-                <hr class="major"></hr>
-                <section>
-                    <h3>Publications</h3>
-                    {% assign items2 = site.posts | where: "group", "publication" %}
-                    {% assign items = items2 | where: "area", "cells" %}
-                    {% for item in items limit:5 %}
-                        <p class="pubs">
-                            {{ item.content }}
-                        </p>
-                    {% endfor %}
-                </section>
-            </div>
-            <div class="7u skel-cell-important">
-                <section>
-                    <h2>Overview</h2>
-                    <div class="image fit">
-                      <img src="images/cells2.png" alt="" class="image fit" />
-                    </div>
-                    <p class="justify">The intervertebral disc (IVD) is the largest avascular structure in the body. Its primary
+                  <p class="justify">The intervertebral disc (IVD) is the largest avascular structure in the body. Its primary
                     function is to transmit and cushion loads across the spine while giving the spine motion. Due
                     to the lack of vascularity, the IVD is generally found to be in a state of degeneration in adults.
                     Though many tissue properties of the discs have been studied, there are still gaps in the
@@ -53,6 +25,40 @@ layout: default
                     </p>
                 </section>
             </div>
+            <div class="4u skel-cell-important">
+                <section>
+                    <div class="image fit">
+                      <img src="images/cells2.png" class="image fit" alt="" /></a>
+                    </div>
+                </section>
+            </div>
+          </div>
+          <hr class="major"></hr>
+          <div class="row">
+            <div class="4u">
+            <section>
+                <h3>Recent News</h3>
+                {% assign items2 = site.posts | where: "group", "news" %}
+                {% assign items = items2 | where: "area", "cells" %}
+                {% for item in items limit:5 %}
+                  <p>
+                      <a href="{{ site.baseurl }}{{ item.url }}">{{ item.date | date_to_string }} &mdash; {{ item.title }}</a>
+                  </p>
+                {% endfor %}
+            </section>
+          </div>
+          <div class="8u">
+            <section>
+                <h3>Publications</h3>
+                {% assign items2 = site.posts | where: "group", "publication" %}
+                {% assign items = items2 | where: "area", "cells" %}
+                {% for item in items limit:5 %}
+                    <p>
+                        {{ item.content }}
+                    </p>
+                {% endfor %}
+            </section>
+          </div>
         </div>
     </div>
 </section>
