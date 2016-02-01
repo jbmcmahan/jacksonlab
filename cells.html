@@ -39,7 +39,7 @@ layout: default
             <section>
                 <h3>Recent News</h3>
                 {% assign items2 = site.posts | where: "group", "news" %}
-                {% assign items = items2 | where: "area", "cells" %}
+                {% assign items = items2 | where: "area", "cells" or "tissues cells" or "cells tissues" %}
                 {% for item in items limit:5 %}
                   <p>
                       <a href="{{ site.baseurl }}{{ item.url }}">{{ item.date | date_to_string }} &mdash; {{ item.title }}</a>
