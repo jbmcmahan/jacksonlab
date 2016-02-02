@@ -1,13 +1,13 @@
 ---
 layout: post
 group: publication
-area: 
+area:
 ---
 Malandrino, A., <b>Jackson, A.</b>, Huyghe, J., & Noailly, J. (2015). Poroelastic modeling of the intervertebral disc: A path toward integrated studies of tissue biophysics and organ degeneration. <i>Mrs Bulletin</i>, 40(4), 324-332. doi:10.1557/mrs.2015.68
 
 Zhu, Q., <b>Jackson, A. R.</b>, & Gu, W. Y. (2012). Cell viability in intervertebral disc under various nutritional and dynamic loading conditions: 3d finite element analysis. <i>Journal of Biomechanics</i>, 45(16), 2769-2777. doi:10.1016/j.jbiomech.2012.08.044
 
-<b>Jackson, A. R.</b>, Yuan, T., Huang, C., Brown, M. D., & Gu, W. Y. (2012). Nutrient transport in human annulus fibrosus is affected by compressive strain and anisotropy. <i>Annals of Biomedical Engineering</i>, 40(12), 2551-2558. <a href="{{site.baseurl}}/articles/nutrient_transport_in_human_annulus.pdf"> doi:10.1007/s10439-012-0606-4</a>
+<b>Jackson, A. R.</b>, Yuan, T., Huang, C., Brown, M. D., & Gu, W. Y. (2012). Nutrient transport in human annulus fibrosus is affected by compressive strain and anisotropy. <i>Annals of Biomedical Engineering</i>, 40(12), 2551-2558. doi:10.1007/s10439-012-0606-4</a>
 
 <b>Jackson, A. R.</b>, Huang, C. C., Brown, M. D., & Yong, W. G. (2011). 3D finite element analysis of nutrient distributions and cell viability in the intervertebral disc: Effects of deformation and degeneration. <i>Journal of Biomechanical Engineering</i>, 133(9), 091006-091006. doi:10.1115/1.4004944
 
